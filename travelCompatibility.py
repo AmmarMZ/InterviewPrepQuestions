@@ -14,6 +14,6 @@ def travelCompatibility(myInput, friendsInput):
 		
 	return matchedIndex
 
-index = travelCompatibility(["YYZ","JFK","SFO"], [["YXU", "JFaK"],["SFsO", "BOS", "JsFK"],["LGA"]])
+index = travelCompatibility(["YYZ","JFK","SFO"], [["YXU", "JFK"],["SFO", "BOS", "JFK"],["LGA"]])
 
 print("Output: " , index)
