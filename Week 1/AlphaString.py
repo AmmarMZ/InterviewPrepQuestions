@@ -4,12 +4,12 @@ def longestAlphaString(input):
 	output = input[0]
 	
 	for i in range(len(input)-1):
-		if input[i]<= input[i+1]:
-			temp = temp + input[i+1]
-			if len(temp) > len(output):
+		if (input[i] <= input[i + 1]):
+			temp = temp + input[i + 1]
+			if (len(temp) > len(output)):
 				output = temp           
 		else:
-			temp = input[i+1]
+			temp = input[i + 1]
 
 	print("Output: :" + output)
 	
