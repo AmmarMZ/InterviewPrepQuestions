@@ -20,19 +20,28 @@ class FixedQSize:
     
     def poll(self):
         if(len(self.Q) >= 1):
-            return self.Q.pop()
+
+            return self.Q.pop(0)
         else:
             print("Nothing to pop")
             return
 
 def main():
-    q = FixedQSize(5)
-    l1 = [1,2,3,4,'a']
-    print(l1)
-    print(q.Q)
+    q = FixedQSize(3)
+    l1 = [1,2,3]
+    l2 = [4,5,6]
+    l3 = [7,8,9]
+    
     q.enqueue(l1)
+    q.enqueue(l2)
+    q.enqueue(l3)
+
     print(q.Q)
     print(q.poll())
     print(q.Q)
+    print(q.poll())
+    print(q.Q)
+    print(q.poll())
+
 
 main()
